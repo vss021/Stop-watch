@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-400 flex justify-center items-center h-screen">
+    <div id="container">
+      <div id="time ">
+        <span class="text-9xl" id="hr" name="digit">00</span>
+        <span class="text-xl font-semibold" name="display">Hr</span>
+        <span class="text-9xl" id="Min" name="digit">00</span>
+        <span class="text-xl font-semibold" name="display">Min</span>
+        <span class="text-9xl" id="Sec" name="digit">00</span>
+        <span class="text-xl font-semibold" name="display">Sec</span>
+        <span class="text-9xl" id="milsec" name="digit">00</span>
+      </div>
+      <div class="text-center pt-10" id="btn">
+        <button
+          class="m-2 border border-solid rounded-full p-3 border-green-600 bg-green-600 hover:bg-green-400 text-white"
+          id="start"
+          onclick="start()"
+        >
+          Start
+        </button>
+        <button
+          class="m-2 border border-solid rounded-full p-3 border-rose-600 bg-red-600 hover:bg-red-400 text-white"
+          id="stop"
+          onclick="stop()"
+        >
+          Stop
+        </button>
+        <button
+          class="m-2 border border-solid rounded-full p-3 border-blue-600 bg-blue-600 hover:bg-blue-400 text-white"
+          id="reset"
+          onclick="reset()"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="Functions.js"></script>
+  </body>
+</html>
